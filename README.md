@@ -3,12 +3,12 @@
     MDK3 Flood Attack tool written in Python.
 </h1>
 
-# Dependencies
+### Dependencies
 ```
 sudo apt install mdk3
 sudo apt install aircrack-ng
 ```
-# Running 
+### Running 
 ```
 python3 main.py
 ```
